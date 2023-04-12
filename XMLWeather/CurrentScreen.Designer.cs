@@ -38,7 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.forecastLabel = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.conditionsLabel = new System.Windows.Forms.Label();
+            this.OconditionsLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cityOutput
@@ -140,21 +140,21 @@
             this.label5.Text = "____________________________";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // conditionsLabel
+            // OconditionsLabel
             // 
-            this.conditionsLabel.AutoSize = true;
-            this.conditionsLabel.Location = new System.Drawing.Point(62, 320);
-            this.conditionsLabel.Name = "conditionsLabel";
-            this.conditionsLabel.Size = new System.Drawing.Size(35, 13);
-            this.conditionsLabel.TabIndex = 43;
-            this.conditionsLabel.Text = "label1";
+            this.OconditionsLabel.AutoSize = true;
+            this.OconditionsLabel.Location = new System.Drawing.Point(62, 320);
+            this.OconditionsLabel.Name = "OconditionsLabel";
+            this.OconditionsLabel.Size = new System.Drawing.Size(35, 13);
+            this.OconditionsLabel.TabIndex = 43;
+            this.OconditionsLabel.Text = "label1";
             // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.Controls.Add(this.conditionsLabel);
+            this.Controls.Add(this.OconditionsLabel);
             this.Controls.Add(this.forecastLabel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cityOutput);
@@ -183,6 +183,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label forecastLabel;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label conditionsLabel;
+        private System.Windows.Forms.Label OconditionsLabel;
     }
 }
