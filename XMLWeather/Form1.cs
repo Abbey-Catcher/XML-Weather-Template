@@ -49,6 +49,7 @@ namespace XMLWeather
                 reader.ReadToFollowing("temperature");
                 d.tempLow = reader.GetAttribute("min");
                 d.tempHigh = reader.GetAttribute("max");
+                d.tempUnit = reader.GetAttribute("unit");
 
                 //adds days to the list if not null
                 if (d.date != null)
@@ -71,6 +72,8 @@ namespace XMLWeather
 
             reader.ReadToFollowing("temperature");
             days[0].currentTemp = reader.GetAttribute("value");
+            days[0].currentTemp = reader.GetAttribute("value");
+
         }
 
 
