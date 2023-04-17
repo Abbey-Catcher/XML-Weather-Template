@@ -56,9 +56,9 @@ namespace XMLWeather
                 {
                     days.Add(d);
                 }
-                reader.Close();
-
             }
+            reader.Close();
+
         }
 
         private void ExtractCurrent()
@@ -72,10 +72,15 @@ namespace XMLWeather
 
             reader.ReadToFollowing("temperature");
             days[0].currentTemp = reader.GetAttribute("value");
-            days[0].currentTemp = reader.GetAttribute("value");
-
+            days[0].tempHigh = reader.GetAttribute("max");
+            days[0].tempLow = reader.GetAttribute("min");
+            days[0].tempUnit = reader.GetAttribute("unit");
         }
 
+        /*city search:
+         * try and catch
+         * 
+        */
 
     }
 }
